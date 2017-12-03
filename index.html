@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- <link rel="shortcut icon" href=""/> -->
+      <link rel="shortcut icon" href="imgs/icon.png"/>
       <meta property="og:url" content="https://facilitandosantos.github.io/">
       <meta property="og:title" content="Facilitando">
       <meta property="og:site_name" content="Facilitando">
@@ -16,6 +16,10 @@
 
       <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
       <style>
+        html{
+          scroll-behavior: smooth;
+        }
+
         .jumbotron
         {
           background-image: url(imgs/jumbotron-back-test.jpg);
@@ -32,9 +36,10 @@
           text-align: center;
         }
       </style>
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+    <script src="node_modules/animejs/anime.js"></script>
 
     <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -47,16 +52,16 @@
 
           <div class="collapse navbar-collapse" id="navbarSite">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Despesas</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contratos</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Salários</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Licitações</a></li>
+              <li class="nav-item"><a class="nav-link active">Início</a></li>
+              <li class="nav-item"><a href="despesas.php" class="nav-link">Despesas</a></li>
+              <li class="nav-item"><a href="receitas.php" class="nav-link">Receitas</a></li>
+              <!-- <li class="nav-item"><a href="#" class="nav-link">Salários</a></li> --> <!-- Futuro -->
+              <li class="nav-item"><a href="propostas.php" class="nav-link">Propostas</a></li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">Social</a>
-                  <div class="dropdown-menu" >
+                  <div class="dropdown-menu">
                     <a href="#" class="dropdown-item">Facebook</a>
                     <a href="#" class="dropdown-item">Twitter</a>
                     <a href="#" class="dropdown-item">Instagram</a>
@@ -70,16 +75,19 @@
 
       <section class="jumbotron jumbotron-fluid text-secondary">
         <div class="container mastinfo">
+          <img src="imgs/logo.png" alt="Website logo" class="img-fluid">
           <h1 class="display-4 text-white">Facilitando</h1>
           <p class="lead">Aqui você entende o que vê</p>
         </div>
       </section>
 
+
       <section class="container">
         <h2 class="display-5 text-center text-primary">Você se preocupa com a sua cidade?</h2>
         <hr class="my-4">
-        <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis turpis aliquam scelerisque dignissim. Donec a efficitur lectus. Curabitur at viverra ante, non gravida lacus. Pellentesque vehicula eros quis eros ultrices, sed laoreet ipsum venenatis.</p>
-        <p class="lead text-justify">Etiam tempus, lectus a dapibus sagittis, ligula mauris commodo velit, non sodales lectus dolor in tortor. Phasellus nec malesuada metus. Proin at fringilla orci, sit amet convallis diam. Vivamus orci mi, consequat sed lacinia et, pharetra eu dui.</p>
+        <p class="lead text-justify">Ser cidadão é saber que temos direitos e deveres. Um dos nossos deveres é olhar de perto como o dinheiro público é gasto, mas você já tentou acessar algum relatório financeiro do município?
+Você conseguiu encontrar as informações? Entendeu os termos jurídicos, burocráticos ou simplesmente técnicos?</p>
+        <p class="lead text-justify">Vamos ajudar nossos vereadores a conhecer a nossa opnião. Vamos olhar de perto como eles gastam o dinheiro público. Nossa proposta é facilitar a forma de enxergar o que a prefeitura faz por você, curta, compartilhe e se engaje.</p>
       </section>
 
       <h2 class="text-center bg-secondary text-white p-3 mb-0">O que você quer ver?</h2>
@@ -87,22 +95,32 @@
         <div class="card-deck p-4 m-0 bg-light">
             <!-- Despesas -->
             <div class="card bg-secondary text-light">
+              <a href="despesas.php" style="color: white; text-decoration: none">
               <img src="imgs/despesas.jpeg" class="card-img-top" alt="Imagem que representa o item de 'Despesas'">
+              </a>
               <div class="card-body text-center">
+                <a href="despesas.php" style="color: white; text-decoration: none">
                 <h2 class="card-title">Despesas</h2>
                 <hr class="my-4">
                 <p class="card-text">Veja para onde vai o seu dinheiro, sem complicações.</p>
+                </a>
               </div>
+
             </div>
+
             <!-- End Despesas -->
 
             <!-- Contratos -->
             <div class="card bg-secondary text-light">
+              <a href="receitas.php" style="color: white; text-decoration: none">
               <img src="imgs/contratos.jpeg" class="card-img-top" alt="Imagem que representa o item de 'Despesas'">
+              </a>
               <div class="card-body text-center">
-                <h2 class="card-title">Contratos</h2>
+                <a href="receitas.php" style="color: white; text-decoration: none">
+                <h2 class="card-title">Receitas</h2>
                 <hr class="my-4">
-                <p class="card-text">Quanto as empresas estão sendo pagas? Qual é o prazo que foi definido para realizarem a entrega?</p>
+                <p class="card-text">Quais são as maiores fontes de recursos da prefeitura? Veja com gráficos</p>
+                </a>
               </div>
             </div>
             <!-- End Contratos -->
@@ -110,7 +128,7 @@
 
         <div class="card-deck p-4 m-0 bg-light">
             <!-- Salários -->
-            <div class="card bg-secondary text-light">
+            <div class="card bg-secondary text-light d-none"> <!-- Futuro -->
               <img src="imgs/salarios.jpeg" class="card-img-top" alt="Imagem que representa o item de 'Despesas'">
               <div class="card-body text-center">
                 <h2 class="card-title">Salários</h2>
@@ -120,16 +138,20 @@
             </div>
             <!-- End Salários -->
 
-            <!-- Contratos -->
-            <div class="card bg-secondary text-light">
+            <!-- Propostas -->
+            <div class="card bg-secondary text-light col-md-6 ml-6 p-0">
+              <a href="propostas.php" style="color: white; text-decoration: none">
               <img src="imgs/licitacoes.jpeg" class="card-img-top" alt="Imagem que representa o item de 'Despesas'">
+              </a>
               <div class="card-body text-center">
-                <h2 class="card-title">Licitações</h2>
+                <a href="propostas.php" style="color: white; text-decoration: none">
+                <h2 class="card-title">Propostas</h2>
                 <hr class="my-4">
-                <p class="card-text">Quais empresas são responsáveis por atender as nossas necessidades?</p>
+                <p class="card-text">Veja quais são as propostas dos vereadores da cidade.</p>
+                </a>
               </div>
             </div>
-            <!-- End Contratos -->
+            <!-- End Propostas -->
         </div>
 
       <!-- Footer -->
@@ -138,8 +160,34 @@
           <p class="text-white">Desenvolvido por RKB - Hack in Santos 2017</p>
         </div>
       </footer>
+      
+      
+        <a onclick="topFunction()" id="myBtn" title="Ir para o topo" class="btn btn-light col-1 p-0 mb-2 mr-4 fixed-bottom ml-auto border"><span class="fa fa-arrow-circle-up"></span></button>
+      
+
+      <!-- Script - back to top -->
+      <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
+                
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <!-- End Script back to top -->
 
       <script src="node_modules/jquery/dist/jquery.js"></script>
+      <script src="node_modules/wowjs/dist/wow.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </body>

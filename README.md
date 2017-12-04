@@ -7,7 +7,7 @@ Website responsivo criado durante o Hack in Santos com o intuito de simplificar 
 - Possibilitar a interação da população com propostas apresentadas pelo vereadores<br/>
 <br/>
 <b>Tecnologias</b><br/>
-- HTML 5, CSS, JavaScript e PHP<br/>
-- Banco de dados MySQL<br/>
-- Bootstrap 4, CanvasJS e Font Awesome<br/>
+&bull; HTML 5, CSS, JavaScript e PHP<br/>
+&bull; Banco de dados MySQL<br/>
+&bull; Bootstrap 4, CanvasJS e Font Awesome<br/>
 <br/>

@@ -8,8 +8,8 @@ Website responsivo criado durante o Hack in Santos com o intuito de simplificar 
 <br/>
 <b>Tecnologias</b><br/><br/>
   <span style="line-height: 170; margin-left: 25px">
-  &nbsp;&#9679;   HTML 5, CSS, JavaScript e PHP<br/>
-  &nbsp;&#9679;   Banco de dados MySQL<br/>
-  &nbsp;&#9679;   Bootstrap 4, CanvasJS e Font Awesome<br/>
+  &nbsp;&nbsp;&#9679; &nbsp;&nbsp;HTML 5, CSS, JavaScript e PHP<br/>
+  &nbsp;&nbsp;&#9679; &nbsp;&nbsp;Banco de dados MySQL<br/>
+  &nbsp;&nbsp;&#9679; &nbsp;&nbsp;Bootstrap 4, CanvasJS e Font Awesome<br/>
   </span>
 <br/>

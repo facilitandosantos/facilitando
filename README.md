@@ -11,4 +11,5 @@ Website responsivo criado durante o Hack in Santos com o intuito de simplificar 
 - Banco de dados MySQL<br/>
 - Bootstrap 4<br/>
 - CanvasJS<br/>
-- Font Awesome
+- Font Awesome<br/>
+<br/>
